@@ -2,7 +2,7 @@ import { LayoutDashboard, BookOpen, HelpCircle, Layers, BarChart2 } from 'lucide
 
 const tabs = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { id: 'study', label: 'Study Plan', icon: BookOpen },
+  { id: 'learn', label: 'Learn', icon: BookOpen },
   { id: 'quiz', label: 'Quiz', icon: HelpCircle },
   { id: 'flashcards', label: 'Flashcards', icon: Layers },
   { id: 'progress', label: 'Progress', icon: BarChart2 },

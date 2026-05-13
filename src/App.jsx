@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navigation from './components/Navigation.jsx'
 import Dashboard from './components/Dashboard.jsx'
 import StudyPlan from './components/StudyPlan.jsx'
+import StudyContent from './components/StudyContent.jsx'
 import Questionnaire from './components/Questionnaire.jsx'
 import Flashcards from './components/Flashcards.jsx'
 import Progress from './components/Progress.jsx'
@@ -84,6 +85,7 @@ export default function App() {
           <div className="mb-6">
             <h1 className="text-xl font-bold text-gray-900">
               {activeTab === 'dashboard' && 'Dashboard'}
+              {activeTab === 'learn' && 'Learn'}
               {activeTab === 'study' && 'Study Plan'}
               {activeTab === 'quiz' && 'Practice Quiz'}
               {activeTab === 'flashcards' && 'Flashcards'}
@@ -94,11 +96,14 @@ export default function App() {
           {activeTab === 'dashboard' && (
             <Dashboard {...pageProps} />
           )}
+          {activeTab === 'learn' && (
+            <StudyContent onTabChange={setActiveTab} />
+          )}
           {activeTab === 'study' && (
             <StudyPlan studyProgress={studyProgress} onToggleDay={handleToggleDay} />
           )}
           {activeTab === 'quiz' && (
-            <Questionnaire quizSessions={quizSessions} onSessionComplete={handleSessionComplete} />
+            <Questionnaire quizSessions={quizSessions} onSessionComplete={handleSessionComplete} onTabChange={setActiveTab} />
           )}
           {activeTab === 'flashcards' && (
             <Flashcards flashcardProgress={flashcardProgress} onUpdateProgress={handleUpdateFlashcard} />
