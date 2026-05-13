@@ -34,7 +34,7 @@ export default function Navigation({ activeTab, onTabChange }) {
           ))}
         </nav>
         <div className="p-4 border-t border-gray-100">
-          <p className="text-xs text-gray-400 text-center">PMI ECO 2021 • PMBOK 7</p>
+          <p className="text-xs text-gray-400 text-center">PMI ECO 2021 • PMBOK 8 • Rita Mulcahy</p>
         </div>
       </aside>
 

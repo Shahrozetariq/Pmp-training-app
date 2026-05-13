@@ -70,6 +70,7 @@ export default function Dashboard({ studyProgress, quizSessions, flashcardProgre
         <h2 className="text-2xl font-bold mt-1">PMP 2026 Dashboard</h2>
         <p className="text-blue-100 text-sm mt-1">
           {today.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}
+          {' '}&bull; PMBOK 8 &bull; Rita Mulcahy
         </p>
         <div className="mt-4 flex items-center gap-2">
           <div className="bg-white/20 rounded-full px-3 py-1 flex items-center gap-1">

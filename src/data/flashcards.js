@@ -306,6 +306,109 @@ export const flashcards = [
     front: 'What is a post-project review (lessons learned) and when should it occur?',
     back: 'Captures what went well, what to improve, and recommendations for future projects.\n\nWhen: Should occur DURING the project (not just at end) and at phase gates.\n\nContents:\n- What went well (continue)\n- What didn\'t work (stop/change)\n- Recommendations for next time\n- Metrics and data\n\nStored in: Organizational Process Assets / Knowledge Base\n\nIn agile: retrospectives serve this purpose every sprint.',
   },
+  // ── PMBOK 8 EDITION ──────────────────────────────────────────────────────────
+  {
+    id: 61, domain: 'process', category: 'PMBOK 8',
+    front: 'What are the 12 Project Management Principles in PMBOK 8th Edition?',
+    back: '1. Be a Diligent, Respectful, and Caring Steward\n2. Create a Collaborative Project Team Environment\n3. Effectively Engage with Stakeholders\n4. Focus on Value\n5. Recognize, Evaluate, and Respond to System Interactions\n6. Demonstrate Leadership Behaviors\n7. Tailor Based on Context\n8. Build Quality Into Processes and Deliverables\n9. Navigate Complexity\n10. Optimize Risk Responses\n11. Embrace Adaptability and Resiliency\n12. Enable Change to Achieve the Envisioned Future State\n\nKey: These are PRINCIPLES (guidance), not processes (steps).',
+  },
+  {
+    id: 62, domain: 'process', category: 'PMBOK 8',
+    front: 'What are the 8 Project Performance Domains in PMBOK 8th Edition?',
+    back: '1. Stakeholders – engage, understand, collaborate\n2. Team – servant leadership, skills, trust, culture\n3. Development Approach & Life Cycle – predictive/adaptive/hybrid spectrum\n4. Planning – iterative, adaptive, just enough\n5. Project Work – coordinate, communicate, learn\n6. Delivery – scope, quality, requirements, value\n7. Measurement – metrics, KPIs, forecasts, health\n8. Uncertainty – risk, complexity, ambiguity, volatility\n\nKey difference from PMBOK 6: domains replace knowledge areas; principles replace processes.',
+  },
+  {
+    id: 63, domain: 'process', category: 'PMBOK 8',
+    front: 'How does PMBOK 8 approach tailoring?',
+    back: 'PMBOK 8 Tailoring Process:\n1. Select – choose initial development approach based on context\n2. Tailor – adjust practices to fit the specific project\n3. Implement – apply the tailored approach\n4. Continuously Improve – refine through retrospectives and feedback\n\nContext factors: organizational culture, industry type, team experience, regulatory requirements, technology, complexity level.\n\nKey principle: No one-size-fits-all approach; always tailor.',
+  },
+  {
+    id: 64, domain: 'process', category: 'PMBOK 8',
+    front: 'What is the Cynefin Framework and how does it apply to project management?',
+    back: 'A complexity framework with 5 domains:\n\nClear: cause-effect obvious → apply best practices, standardize\nComplicated: cause-effect requires analysis → engage experts, analyze\nComplex: cause-effect only in retrospect → experiment, probe, sense\nChaotic: no cause-effect → act immediately, stabilize\nConfused (center): unclear which domain → gather info to categorize\n\nPM Application: match your project approach to the domain:\n- Clear → predictive/waterfall\n- Complicated → predictive with expert review\n- Complex → agile/iterative\n- Chaotic → crisis management',
+  },
+  {
+    id: 65, domain: 'process', category: 'PMBOK 8',
+    front: 'What is the Value Delivery System in PMBOK 8?',
+    back: 'The organizational framework through which projects deliver value:\n\nPortfolio → Programs → Projects → Operations\n\nKey concepts:\n- Projects create outputs → that enable outcomes → that deliver benefits → that realize strategic value\n- All projects exist within an organizational system\n- The PM must understand how their project contributes to the larger value chain\n- Success = delivering the intended outcomes, not just completing activities\n\nPMBOK 8 emphasis: project economy → every project should have a clear business rationale.',
+  },
+  {
+    id: 66, domain: 'process', category: 'PMBOK 8',
+    front: 'What is the Uncertainty Performance Domain in PMBOK 8?',
+    back: 'Addresses conditions and events that may impact project outcomes.\n\nFour types of uncertainty:\n- Risk: known unknowns with probability and impact\n- Ambiguity: unclear aspects of the project or environment\n- Complexity: system interactions too complex to fully predict\n- Volatility: rapid, unpredictable change\n\nStrategies by type:\n- Risk → risk response strategies (avoid, mitigate, transfer, accept)\n- Ambiguity → progressive elaboration, prototyping\n- Complexity → systems thinking, agile approaches\n- Volatility → adaptability, frequent reassessment\n\nKey: Uncertainty is not all bad — opportunities are also uncertain.',
+  },
+
+  // ── RITA MULCAHY KEY CONCEPTS ─────────────────────────────────────────────
+  {
+    id: 67, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's framework for answering 'What should the PM do FIRST?'",
+    back: "Rita's decision hierarchy for 'FIRST' questions:\n\n1. Assess/Analyze the situation FIRST (gather information)\n2. Identify the root cause\n3. Evaluate impact on project constraints\n4. Select the most proactive, ethical response\n5. Communicate with appropriate stakeholders\n\nRita's rule: Never jump to action without understanding the situation.\n\nKey trap: 'Go directly to sponsor' is almost never the FIRST step. Assess first.\n\nRita's persona: the good PM is always proactive, planned, and process-following.",
+  },
+  {
+    id: 68, domain: 'process', category: 'Rita Mulcahy',
+    front: "What is 'gold plating' and why does Rita Mulcahy consider it a problem?",
+    back: "Gold plating: Adding extra features, functionality, or quality beyond what was specified in scope — WITHOUT a change request.\n\nWhy it's a problem (Rita's view):\n- It's a SCOPE VIOLATION (adding what wasn't approved)\n- It wastes resources\n- Can introduce defects\n- Undermines change control processes\n- Sets wrong stakeholder expectations for future projects\n\nRita's rule: Deliver EXACTLY what was agreed. If you want to add value, submit a change request first.\n\nDifference: Gold plating = team adds extras. Scope creep = stakeholder adds extras informally.",
+  },
+  {
+    id: 69, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's PERT (Three-Point Estimating) formulas",
+    back: "PERT Expected Duration:\nE = (O + 4M + P) / 6\n\nWhere: O = Optimistic, M = Most Likely, P = Pessimistic\n\nStandard Deviation:\nσ = (P - O) / 6\n\nVariance:\nσ² = ((P - O) / 6)²\n\nRange (68% confidence): E ± 1σ\nRange (95% confidence): E ± 2σ\nRange (99.7% confidence): E ± 3σ\n\nRita's tip: PERT gives a WEIGHTED average; the Most Likely (M) gets the most weight (4×).",
+  },
+  {
+    id: 70, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's 5 Project Management Process Groups",
+    back: "Rita organizes PM work into 5 process groups (NOT phases):\n\n1. Initiating – authorize the project/phase; develop charter\n2. Planning – determine scope, schedule, cost, quality, risk, comms, procurement\n3. Executing – do the work; manage team and stakeholders\n4. Monitoring & Controlling – measure performance; manage changes\n5. Closing – close contracts, finalize lessons learned, release resources\n\nRita's key insight: M&C runs in PARALLEL with all other groups, not just at the end.\n\nProcess groups ≠ project phases. Multiple phases can have all 5 groups.",
+  },
+  {
+    id: 71, domain: 'process', category: 'Rita Mulcahy',
+    front: "What are Rita Mulcahy's 'Tricks of the Trade' for risk management?",
+    back: "Rita's key risk tricks:\n\n1. Risk management STARTS in initiating (not planning) — identify risks early\n2. Risk register must exist BEFORE response planning begins\n3. Qualitative analysis ALWAYS precedes quantitative analysis\n4. Every risk needs an OWNER (not the PM — a team member)\n5. Contingency reserves = known unknowns; Management reserves = unknown unknowns\n6. Workarounds are for risks that weren't planned for (NOT planned responses)\n7. Secondary risks: new risks created by risk responses\n8. Residual risks: risk remaining AFTER response implementation\n9. Risks near the END of the project are low priority (less time to impact)\n10. The PM should NEVER accept high-impact risks without creating contingency plans",
+  },
+  {
+    id: 72, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's key EVM must-knows for the PMP exam",
+    back: "Critical EVM formulas (Rita's emphasis):\n\nCV = EV - AC (negative = over budget)\nSV = EV - PV (negative = behind schedule)\nCPI = EV/AC (< 1 = over budget)\nSPI = EV/PV (< 1 = behind schedule)\n\nForecasting:\nEAC = BAC/CPI (when current efficiency continues)\nETC = EAC - AC (work remaining)\nVAC = BAC - EAC (variance at completion)\nTCPI = (BAC-EV)/(BAC-AC) (efficiency needed to finish on budget)\n\nRita's tip: If TCPI > 1.10, the project will NOT finish on budget without change.\nIf CPI and SPI are both < 1.0, the project is in serious trouble — escalate NOW.",
+  },
+  {
+    id: 73, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's PMO types and their differences",
+    back: "Three PMO types (Rita's framework):\n\n1. Supportive PMO (Low control):\n   - Provides templates, training, lessons learned\n   - Advisory role only; PMs don't have to comply\n\n2. Controlling PMO (Moderate control):\n   - Requires compliance with frameworks and methodologies\n   - Reviews and audits projects\n   - Provides PM support and tools\n\n3. Directive PMO (High control):\n   - Directly manages projects\n   - Assigns PMs to projects\n   - PM reports to PMO, not to functional manager\n\nRita's tip: The PMO level of control determines the PM's autonomy.",
+  },
+  {
+    id: 74, domain: 'process', category: 'Rita Mulcahy',
+    front: "What is Rita Mulcahy's approach to quality management?",
+    back: "Rita's key quality concepts:\n\nQuality vs. Grade:\n- Quality = meeting requirements (conformance)\n- Grade = level of features (low grade ≠ low quality)\n\nCost of Quality breakdown:\n- Prevention: training, process design ($)\n- Appraisal: testing, inspection ($$)\n- Internal failure: rework, scrap ($$$)\n- External failure: warranty, recalls ($$$$)\n\nRita's rule: Prevention costs LESS than fixing defects later.\n\nQuality is PLANNED, not inspected in at the end.\n\nKey tools: Cause-and-effect (fishbone/Ishikawa), Pareto chart (80/20 rule), Control charts, Histograms, Scatter diagrams, Flowcharts, Check sheets.",
+  },
+  {
+    id: 75, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's corrective vs. preventive vs. defect repair",
+    back: "Three types of actions (Rita's distinctions):\n\nCorrective Action:\n- Realigns future performance with the plan\n- Addresses current deviation that already occurred\n- Example: Adding resources to recover schedule\n\nPreventive Action:\n- Prevents future deviations BEFORE they occur\n- Addresses identified risks proactively\n- Example: Adding quality gates to prevent defects\n\nDefect Repair:\n- Fixes a product or component that doesn't meet requirements\n- Requires inspection after repair\n- Example: Rewriting code that fails tests\n\nRita's tip: All three require formal change requests and updates to the project management plan.",
+  },
+  {
+    id: 76, domain: 'people', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's approach to project constraints and the 'triple constraint'",
+    back: "Rita's six project constraints (she expanded from 3 to 6):\n1. Scope\n2. Time (Schedule)\n3. Cost\n4. Quality\n5. Risk\n6. Resources\n\nKey insight: Changing ANY ONE constraint affects ALL others.\n\nRita's exam tip: When a question asks what happens if scope is added, the answer almost always involves a trade-off: schedule extends, cost increases, or quality decreases.\n\nRita's rule: The PM must identify which constraints are FIXED and which are FLEXIBLE at project initiation.",
+  },
+  {
+    id: 77, domain: 'business', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's key concepts for project integration management",
+    back: "Rita's integration must-knows:\n\n1. Project Charter authorizes the project AND the PM's authority — never start without one\n2. PM creates the Project Management Plan by integrating ALL subsidiary plans\n3. Develop PMP ≠ executing the work — it's the planning, not doing\n4. Integrated Change Control: ALL changes go through CCB; PM has no authority to approve changes unilaterally\n5. Direct and Manage Project Work: where the actual work happens\n6. Monitor and Control runs continuously, not just at the end\n7. Lessons Learned: Rita says these should be documented THROUGHOUT the project, not just at closure\n8. Close Project: get formal acceptance BEFORE releasing resources",
+  },
+  {
+    id: 78, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's 'Critical Chain Method' vs. Critical Path Method",
+    back: "Critical Path Method (CPM):\n- Identifies the longest sequence of dependent activities\n- Based on activity durations (deterministic)\n- Float/slack shows schedule flexibility\n- Does NOT consider resource constraints\n\nCritical Chain Method (CCM):\n- Accounts for resource constraints and uncertainty\n- Removes safety from individual activities and adds 'buffers'\n- Project buffer protects end date\n- Feeding buffers protect critical chain from delays on non-critical paths\n- Based on Theory of Constraints (Goldratt)\n\nRita's tip: Critical chain recognizes that Parkinson's Law and student syndrome inflate estimates — buffers at the end are more efficient than padding each task.",
+  },
+  {
+    id: 79, domain: 'process', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's procurement: contract types and when to use each",
+    back: "Rita's contract selection guide:\n\nFirm Fixed Price (FFP):\n- Seller bears all cost risk\n- Use when: scope is well-defined and stable\n- Buyer risk: LOW\n\nFixed Price Incentive Fee (FPIF):\n- Shared risk; seller gets bonus for performance\n- Use when: scope is mostly defined but can be optimized\n\nCost Plus Fixed Fee (CPFF):\n- Buyer bears cost risk; seller gets fixed profit\n- Use when: scope is uncertain\n\nTime & Materials (T&M):\n- Shared risk; pay per hour + materials\n- Use when: scope evolves (agile work)\n- Risk: T&M has no ceiling unless capped\n\nRita's rule: Always include a 'not-to-exceed' clause with T&M contracts.",
+  },
+  {
+    id: 80, domain: 'people', category: 'Rita Mulcahy',
+    front: "Rita Mulcahy's key stakeholder management concepts",
+    back: "Rita's stakeholder must-knows:\n\n1. Identify ALL stakeholders — including those who oppose the project\n2. More stakeholders = more communication channels = higher complexity\n3. Negative stakeholders must be ENGAGED, not ignored\n4. Stakeholder engagement levels: Unaware → Resistant → Neutral → Supportive → Leading\n5. Desired level for most stakeholders: Supportive or Leading\n6. PM's job: move stakeholders from current to desired engagement level\n7. Power/Interest grid determines how much attention each stakeholder gets\n\nRita's tip: 'Manage Stakeholder Engagement' is in the Executing process group — it's active, ongoing work, not just planning.",
+  },
 ]
 
 export const flashcardsByDomain = {

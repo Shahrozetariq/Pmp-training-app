@@ -724,6 +724,152 @@ export const questions = [
     answer: 1,
     explanation: 'Project success requires achieving intended benefits, which depends on adoption. OCM activities must be integrated into the project plan alongside technical activities — not treated as separate.',
   },
+
+  // ── RITA MULCAHY STYLE QUESTIONS ─────────────────────────────────────────────
+  {
+    id: 61, domain: 'process', task: 'manage-scope', difficulty: 'medium', approach: 'predictive',
+    question: 'A developer adds a new reporting feature to the product that the customer did not request, believing it will impress them. The feature is technically sound and takes 2 days extra. What should the PM do?',
+    options: [
+      'Thank the developer for the initiative and show the feature to the customer',
+      'Address the behavior: adding unrequested features (gold plating) violates scope control; raise a change request if the feature has value',
+      'Accept the feature since it was already built and removing it wastes time',
+      'Add the feature to the scope baseline retroactively',
+    ],
+    answer: 1,
+    explanation: "Gold plating — adding unrequested features outside scope — is a scope violation even when technically well-intentioned. Rita Mulcahy emphasizes this strongly: deliver exactly what was agreed. If the feature has value, submit a formal change request and get approval first.",
+  },
+  {
+    id: 62, domain: 'process', task: 'manage-schedule', difficulty: 'hard', approach: 'predictive',
+    question: 'A task has an optimistic estimate of 4 days, most likely of 7 days, and pessimistic of 16 days. Using PERT three-point estimating, what is the expected duration?',
+    options: [
+      '7 days',
+      '8 days',
+      '9 days',
+      '9.3 days',
+    ],
+    answer: 1,
+    explanation: 'PERT formula: E = (O + 4M + P) / 6 = (4 + 4×7 + 16) / 6 = (4 + 28 + 16) / 6 = 48 / 6 = 8 days. The Most Likely estimate is weighted 4x because it is the most probable. (Standard deviation = (16-4)/6 = 2 days.)',
+  },
+  {
+    id: 63, domain: 'process', task: 'manage-risks', difficulty: 'hard', approach: 'predictive',
+    question: "According to Rita Mulcahy's risk management sequence, which activity must be completed BEFORE risk response planning begins?",
+    options: [
+      'Quantitative risk analysis',
+      'Risk identification',
+      'Qualitative risk analysis',
+      'Risk monitoring',
+    ],
+    answer: 2,
+    explanation: "Rita Mulcahy's risk management sequence: Plan Risk Management → Identify Risks → Qualitative Risk Analysis → Quantitative Risk Analysis (optional) → Plan Risk Responses → Implement Risk Responses → Monitor Risks. Qualitative analysis must be done to PRIORITIZE risks before responses can be planned. Jumping straight from identification to response planning is a common exam trap.",
+  },
+  {
+    id: 64, domain: 'process', task: 'manage-changes', difficulty: 'medium', approach: 'predictive',
+    question: 'A team member discovers a more efficient way to complete a task that would reduce cost by 10% but requires a minor deviation from the approved project management plan. The PM thinks it is a great idea. What should happen FIRST?',
+    options: [
+      'Implement the change immediately since it benefits the project',
+      'Get the change request approved through the change control process before implementing',
+      'Inform the sponsor and implement if they agree verbally',
+      'Document the change in lessons learned and implement it now',
+    ],
+    answer: 1,
+    explanation: "Rita Mulcahy's rule: ALL deviations from the approved project management plan — even beneficial ones — require formal change control. 'If you haven't planned it, don't do it; re-plan first.' The change control board must approve changes to any baseline, regardless of intent.",
+  },
+  {
+    id: 65, domain: 'process', task: 'manage-budget', difficulty: 'hard', approach: 'predictive',
+    question: 'A project has a BAC of $200,000. At the current status: EV = $80,000, AC = $100,000, PV = $90,000. What is the EAC assuming current cost efficiency continues?',
+    options: [
+      '$200,000',
+      '$220,000',
+      '$250,000',
+      '$280,000',
+    ],
+    answer: 2,
+    explanation: 'CPI = EV/AC = $80,000/$100,000 = 0.80. EAC = BAC/CPI = $200,000/0.80 = $250,000. This means the project is projected to cost $50,000 more than planned if current efficiency continues. CV = EV-AC = $80K-$100K = -$20K (over budget). SV = EV-PV = $80K-$90K = -$10K (behind schedule).',
+  },
+  {
+    id: 66, domain: 'process', task: 'manage-quality', difficulty: 'medium', approach: 'predictive',
+    question: "A quality analysis shows that 75% of the project's defects come from 3 root causes out of 20 identified. Which quality tool helps visualize this finding and what principle does it demonstrate?",
+    options: [
+      'Control chart — demonstrates statistical process control',
+      'Pareto chart — demonstrates the 80/20 rule (focus on vital few causes)',
+      'Scatter diagram — demonstrates correlation between variables',
+      'Cause-and-effect diagram — demonstrates root cause analysis',
+    ],
+    answer: 1,
+    explanation: "A Pareto chart (bar chart ranked from most to least frequent) demonstrates the 80/20 rule (Pareto principle): roughly 80% of defects come from 20% of causes. Rita Mulcahy emphasizes this tool because it helps PMs PRIORITIZE quality improvement efforts on the 'vital few' causes rather than spreading resources across all causes.",
+  },
+  {
+    id: 67, domain: 'process', task: 'governance', difficulty: 'medium', approach: 'predictive',
+    question: 'An organization has three PMOs: one that provides templates and advice, one that requires standard methodology compliance, and one that directly manages all projects. According to PMO typology, what are these respectively?',
+    options: [
+      'Directive, Controlling, Supportive',
+      'Supportive, Controlling, Directive',
+      'Controlling, Supportive, Directive',
+      'Supportive, Directive, Controlling',
+    ],
+    answer: 1,
+    explanation: "The three PMO types (Rita Mulcahy and PMBOK): Supportive = low control, provides templates/training/advice, advisory only. Controlling = moderate control, requires compliance with methodology and standards. Directive = high control, directly manages projects and assigns PMs. Each represents increasing levels of organizational control over projects.",
+  },
+  {
+    id: 68, domain: 'process', task: 'integrate-planning', difficulty: 'hard', approach: 'predictive',
+    question: 'A project manager is starting a new project but does not yet have a signed project charter. A senior manager verbally authorizes the PM to begin work immediately since the charter approval is delayed. What should the PM do?',
+    options: [
+      'Begin work since a verbal authorization from senior management is sufficient',
+      'Escalate to the sponsor to get the charter approved before starting any work; verbal authorization is not a project charter',
+      'Begin preliminary work only and document the verbal authorization',
+      'Create a simplified project scope document to substitute for the charter',
+    ],
+    answer: 1,
+    explanation: "Rita Mulcahy's integration rule: A project cannot officially begin without an approved project charter. The charter formally authorizes the project and the PM's authority. Verbal authorizations are insufficient. Without a charter, the PM has no authority, resources are not committed, and the project has no formal existence in the organization.",
+  },
+  {
+    id: 69, domain: 'process', task: 'manage-budget', difficulty: 'hard', approach: 'predictive',
+    question: 'A project has a TCPI of 1.18 based on the BAC. What does this mean?',
+    options: [
+      'The project needs to be 18% more efficient for the remaining work to finish on budget — which is very difficult',
+      'The project is 18% over budget and on track',
+      'For every dollar remaining, the team will deliver $1.18 of value',
+      'The project will finish 18% under budget',
+    ],
+    answer: 0,
+    explanation: 'TCPI (To-Complete Performance Index) = (BAC-EV)/(BAC-AC). A TCPI of 1.18 means the team must be 18% MORE efficient for all remaining work than the original plan assumed. Rita Mulcahy notes: if TCPI > 1.10, the budget target is generally unrealistic — the PM should present revised forecasts to management rather than pretend the original budget is achievable.',
+  },
+  {
+    id: 70, domain: 'people', task: 'negotiate-agreements', difficulty: 'medium', approach: 'predictive',
+    question: 'During project execution, a major vendor informs you that due to supply shortages, they cannot deliver a critical component on time. This will delay the project by 6 weeks. As the PM, what should you do FIRST?',
+    options: [
+      'Terminate the vendor contract and find a new supplier immediately',
+      'Assess the full impact on the project (schedule, cost, scope, risk), then explore options with the vendor and update stakeholders',
+      'Report the delay to the project sponsor and request a deadline extension',
+      'Add the delay to the risk register and schedule a risk review meeting',
+    ],
+    answer: 1,
+    explanation: "Rita Mulcahy's 'FIRST' framework: always ASSESS before acting. Understand the full impact of the problem across all project constraints before deciding on a response. After impact assessment: explore vendor alternatives, fast-track other activities, negotiate partial delivery, or activate contingency plans. Only then communicate to stakeholders with options in hand.",
+  },
+  {
+    id: 71, domain: 'business', task: 'compliance', difficulty: 'medium', approach: 'both',
+    question: 'A project manager discovers a PMBOK 8 principle being violated: the team is not consistently engaging stakeholders during iteration reviews, causing misalignment. What is the MOST appropriate action?',
+    options: [
+      'Document the violation in the lessons learned register',
+      'Facilitate a team discussion to reinforce the principle and improve stakeholder engagement in upcoming reviews',
+      'Escalate to the PMO since PMBOK principles are organizational governance',
+      'Accept it since principles are guidelines, not mandatory processes',
+    ],
+    answer: 1,
+    explanation: "PMBOK 8's principles-based approach means the PM uses judgment to apply principles to the context. The 'Effectively Engage with Stakeholders' principle requires active, ongoing engagement. When a principle is being violated, the PM should facilitate improvement rather than simply document or escalate. Principles guide behavior; the PM is responsible for enabling them.",
+  },
+  {
+    id: 72, domain: 'process', task: 'methodology', difficulty: 'hard', approach: 'both',
+    question: 'Using the Cynefin framework from PMBOK 8, a project involves pioneering use of a new AI technology where cause-and-effect relationships are only understood in retrospect. Which domain does this represent and what approach is recommended?',
+    options: [
+      'Complicated domain — engage experts and analyze before acting',
+      'Clear domain — apply best practices and standardize',
+      'Complex domain — probe with small experiments, sense results, then respond',
+      'Chaotic domain — act immediately to stabilize, then assess',
+    ],
+    answer: 2,
+    explanation: "The Complex domain (Cynefin): cause-and-effect can only be understood in retrospect; no expert fully knows the answer. The recommended approach is 'probe-sense-respond' — run small experiments (spikes, prototypes, MVPs), learn from results, and adapt. This maps directly to agile/iterative development. PMBOK 8 uses Cynefin to justify choosing adaptive approaches for complex environments.",
+  },
 ]
 
 export const questionsByDomain = {
